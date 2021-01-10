@@ -7,7 +7,7 @@ const amountRef = document.querySelector('#controls > input');
 
 amountRef.addEventListener('change', getNumber);
 createBoxesRef.addEventListener('click', handleRender);
-destroyBoxesRef.addEventListener('click', hendkeDestroy);
+destroyBoxesRef.addEventListener('click', handleDestroy);
 
 function getNumber(event) {
   const inputValue = event.target.value;
@@ -39,7 +39,7 @@ function handleRender() {
   createBoxes(amount);
 }
 
-function hendkeDestroy() {
+function handleDestroy() {
   boxContainerRef.textContent = '';
   amountRef.value = '';
   amount = '';
